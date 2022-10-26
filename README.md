@@ -8,6 +8,8 @@ run **get_dependances.bat** to remote execution from https://github.com/EpicGame
 
 run **set_local_paths.bat** to add paths to dependences
 
+Install https://github.com/TobyLobster/ImportLDraw plugin into blender
+
 Copy Content Folder into target Unreal project
 
 import_lego_in_scene.ipynb have code that reads ldraw files 
