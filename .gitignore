@@ -1,3 +1,5 @@
 models/
 utils/dependencies/
 *.pyc
+Content/Parts/Lego_*
+Content/Parts/LegoM*

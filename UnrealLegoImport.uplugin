@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "UnrealLegoImport",
+	"Description": "https://github.com/sZXZ/UnrealLegoImport",
+	"Category": "Other",
+	"CreatedBy": "Alexander Prokopchuk",
+	"CreatedByURL": "https://github.com/sZXZ/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+    "Plugins": [
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+        {
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		}
+   ]
+}

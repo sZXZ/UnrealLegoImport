@@ -42,7 +42,7 @@ def execute_import_static_mesh(file_path):
     mesh_data = build_static_mesh_data()
     mesh_options = build_import_options(mesh_data)
     name = file_path.split('\\')[-1][0:-4]
-    import_tasks = build_import_tasks(file_path, f"Lego_{name}", "/Game/LEGO/Parts",
+    import_tasks = build_import_tasks(file_path, f"Lego_{name}", "/UnrealLegoImport/Parts",
                                       mesh_options)
     asset_tools = unreal.AssetToolsHelpers.get_asset_tools()
     asset_tools.import_asset_tasks(import_tasks)

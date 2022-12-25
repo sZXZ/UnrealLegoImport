@@ -18,9 +18,9 @@ def main(context):
     AssetTools = unreal.AssetToolsHelpers.get_asset_tools()
     MaterialEditingLibrary = unreal.MaterialEditingLibrary
 
-    material = '/Game/LEGO/Parts/BaseLegoMaterial.BaseLegoMaterial'
-    working_folder = '/Game/LEGO/Parts/'
-    instance = f'/Game/LEGO/Parts/LegoMaterial_{context.name}_MI.LegoMaterial_{context.name}_MI'
+    material = '/UnrealLegoImport/Parts/BaseLegoMaterial.BaseLegoMaterial'
+    working_folder = '/UnrealLegoImport/Parts/'
+    instance = f'/UnrealLegoImport/Parts/LegoMaterial_{context.name}_MI.LegoMaterial_{context.name}_MI'
 
     if EditorAssetLibrary.does_asset_exist(instance):
         material_instance = EditorAssetLibrary.find_asset_data(

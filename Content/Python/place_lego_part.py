@@ -14,11 +14,11 @@ def get_context():
 def main(context):
     EditorAssetLibrary = unreal.EditorAssetLibrary
     AssetRegistry = unreal.AssetRegistryHelpers.get_asset_registry() # type: unreal.AssetRegistry
-    asset = AssetRegistry.get_asset_by_object_path(f"/Game/LEGO/Parts/Lego_{context.brick}.Lego_{context.brick}")
+    asset = AssetRegistry.get_asset_by_object_path(f"/UnrealLegoImport/Parts/Lego_{context.brick}.Lego_{context.brick}")
     if asset.is_valid():
         part = unreal.load_asset(asset.package_name)
     else:
-        reg = AssetRegistry.get_assets_by_path('/Game/LEGO/Parts/')
+        reg = AssetRegistry.get_assets_by_path('/UnrealLegoImport/Parts/')
         asset = None # type: unreal.AssetData
         for asset in reg:
             try:
@@ -30,7 +30,7 @@ def main(context):
                 part = unreal.load_asset(asset.package_name)
                 break
     print(part)
-    instance = f'/Game/LEGO/Parts/LegoMaterial_{context.material}_MI.LegoMaterial_{context.material}_MI'
+    instance = f'/UnrealLegoImport/Parts/LegoMaterial_{context.material}_MI.LegoMaterial_{context.material}_MI'
     vector = context.vector.split(',')
     matrix = context.rotation_matrix.split(',')
     mv = []
