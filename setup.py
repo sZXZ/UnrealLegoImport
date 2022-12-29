@@ -15,6 +15,9 @@ def main(context):
     with open(venv_path.joinpath('Lib', 'site-packages', 'unreal_remote_execution.pth'), 'w') as f:
         f.write(str(ue_path.joinpath('Engine', 'Plugins', 'Experimental',
                 'PythonScriptPlugin', 'Content', 'Python').resolve()))
+    # adds root folder
+    with open(venv_path.joinpath('Lib', 'site-packages', 'root.pth'), 'w') as f:
+        f.write(str(venv_path.parent.resolve()))
     # <ProjectPath>\Intermediate\PythonStub\
     with open(venv_path.joinpath('Lib', 'site-packages', 'unreal_stab.pth'), 'w') as f:
         f.write(str(Path(__file__).parent.parent.parent.joinpath(
