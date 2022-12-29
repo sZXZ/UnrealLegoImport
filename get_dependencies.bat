@@ -1,2 +1,2 @@
-set /p ue_path="Enter unreal installation folder with \: "
-"%ue_path%Engine\Binaries\ThirdParty\Python3\Win64\python.exe" -m venv venv && venv\\Scripts\\activate && pip install -r requirements.txt && setup.py -u "%ue_path%
+set /p ue_path="Enter unreal installation folder with \ in the end: "
+"%ue_path%Engine\Binaries\ThirdParty\Python3\Win64\python.exe" -m venv venv && venv\\Scripts\\activate && pip install -r requirements.txt && venv\\Scripts\\python.exe setup.py -u "%ue_path%
