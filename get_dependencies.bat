@@ -1,5 +1,2 @@
-git clone https://github.com/EpicGames/BlenderTools --filter=blob:none --sparse
-cd BlenderTools
-git sparse-checkout set --no-cone send2ue/dependencies/
-cd ..
-python -m venv venv && venv\\Scripts\\activate && pip install -r requirements.txt
+set /p ue_path="Enter unreal installation folder with \: "
+"%ue_path%Engine\Binaries\ThirdParty\Python3\Win64\python.exe" -m venv venv && venv\\Scripts\\activate && pip install -r requirements.txt && setup.py -u "%ue_path%

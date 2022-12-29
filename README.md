@@ -12,10 +12,8 @@ Git clone inside Unreal Projects "Plugins" folder `<ProjectPath>/Plugins/UnrealL
 
 by default `git clone` will create folder named UnrealLegoImport
 
-run **get_dependencies.bat** to remote execution from https://github.com/EpicGames/BlenderTools 
-
-run **set_local_paths.bat** to add paths to dependencies
+run **get_dependencies.bat** to create venv for python installed with Unreal Engine 
 
 import_lego_in_scene.ipynb have code that reads ldraw files 
 
-currently there shouldn't be any submodels in the file
+currently there shouldn't be any submodules in the ldraw file
